@@ -15,7 +15,6 @@ async function bootstrap() {
     .setTitle('Lime Home API')
     .setDescription('API for the Lime Home Reservation System')
     .setVersion('1.0')
-    .addTag('cats')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/', app, document);

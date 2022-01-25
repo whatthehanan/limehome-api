@@ -1,6 +1,6 @@
 import { DomainException } from "src/shared/core/DomainException"
 import { Guard } from "src/shared/core/Guard"
-import uuid from "uuid/v4"
+import { v4 as uuid } from "uuid"
 
 interface ReservationProps {
     firstName: string
@@ -12,8 +12,8 @@ interface ReservationProps {
     city: string
     country: string
     numGuests: number
-    checkInDate: Date
-    checkOutDate: Date
+    checkInDate: string
+    checkOutDate: string
 }
 
 export class Reservation {
@@ -58,11 +58,11 @@ export class Reservation {
         return this.props.numGuests
     }
 
-    get checkInDate(): Date {
+    get checkInDate(): string {
         return this.props.checkInDate
     }
 
-    get checkOutDate(): Date {
+    get checkOutDate(): string {
         return this.props.checkOutDate
     }
 

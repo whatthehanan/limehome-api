@@ -11,8 +11,8 @@ interface ReservationDTO {
     city: string
     country: string
     numGuests: number
-    checkInDate: Date
-    checkOutDate: Date
+    checkInDate: string
+    checkOutDate: string
 }
 
 export class ReservationMap {
@@ -50,7 +50,7 @@ export class ReservationMap {
         }, raw.reservationId);
     }
 
-    public static async toPersistence(reservation: Reservation): Promise<any> {
+    public static toPersistence(reservation: Reservation) {
         return {
             reservationId: reservation.reservationId,
             firstName: reservation.firstName,
