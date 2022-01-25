@@ -13,6 +13,10 @@ export class CreateReservationController extends BaseController {
     @Post("/")
     async createReservation(@Body() dto: CreateReservationDTO) {
         await this.createReservationUseCase.execute(dto);
-        return this.ok({ message: "reservation created successfully!" })
+
+        return {
+            status: "success",
+            message: "reservation created successfully!"
+        }
     }
 }

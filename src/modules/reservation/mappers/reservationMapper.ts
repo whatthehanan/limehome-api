@@ -1,6 +1,6 @@
 import { Reservation } from "../domain/reservation";
 
-interface ReservationDTO {
+export interface ReservationDTO {
     reservationId: string
     firstName: string
     lastName: string
