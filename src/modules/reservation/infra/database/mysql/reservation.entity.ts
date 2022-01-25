@@ -32,4 +32,10 @@ export class Reservation {
 
     @Column()
     phoneNumber: string
+
+    @Column()
+    checkInDate: Date
+
+    @Column({ default: null })
+    checkOutDate: Date
 }

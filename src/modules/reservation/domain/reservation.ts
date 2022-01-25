@@ -81,8 +81,8 @@ export class Reservation {
             { argument: props.city, argumentName: 'City' },
             { argument: props.country, argumentName: 'Country' },
             { argument: props.numGuests, argumentName: 'Number of guests' },
-            // { argument: props.checkInDate, argumentName: 'Check-in date' },
-            // { argument: props.checkOutDate, argumentName: 'Check-out date' },
+            { argument: props.checkInDate, argumentName: 'Check-in date' },
+            { argument: props.checkOutDate, argumentName: 'Check-out date' },
         ])
 
         if (!guardResult.succeeded) {
