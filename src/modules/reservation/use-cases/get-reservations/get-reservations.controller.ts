@@ -1,5 +1,5 @@
 import { Body, Controller, Get } from "@nestjs/common";
-import { BaseController } from "src/shared/infra/http/Base.Controller";
+import { BaseController } from "src/shared/infra/http/base-controller";
 import { GetReservationsDTO } from "./get-reservations.dto";
 import { GetReservationsUseCase } from "./get-reservations.use-case";
 
